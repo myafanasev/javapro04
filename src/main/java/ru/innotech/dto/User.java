@@ -1,16 +1,17 @@
 package ru.innotech.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.ToString;
+import lombok.*;
 import ru.innotech.annotation.ColumnName;
 import ru.innotech.annotation.TableName;
 
 @AllArgsConstructor
+@NoArgsConstructor
 @ToString
+@Getter
+@Setter
 @TableName("users")
-public class UserData {
+public class User {
     long id;
     @ColumnName("username")
     String user;
-
 }
